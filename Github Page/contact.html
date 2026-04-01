@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Daye Kim</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html, body {font-family: "Open Sans", sans-serif;}
+        #contact h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .social-icon {
+            margin: 5px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body class="w3-theme-l5">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+                <i class="fa fa-home w3-margin-right"></i>Home
+            </a>
+            <a href="Aboutme.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+            <a href="projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-container w3-content" style="max-width:800px; margin-top:80px;">
+        <div id="contact" class="w3-container w3-card w3-white w3-round w3-margin">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please use the information below:</p>
+            <div class="w3-row-padding" style="margin: 16px 0;">
+                <!-- Contact Info -->
+                <div class="w3-col m6">
+                    <h4>Personal Information</h4>
+                    <p><i class="fa fa-envelope"></i> Email: <a href="mailto:ddkim@neiu.edu">ddkim@neiu.edu</a></p>
+                    <p><i class="fa fa-phone"></i> Phone: +1 (773) 123-4567</p>
+                    <p><i class="fa fa-map-marker"></i> Location: Seoul, South Korea</p>
+                </div>
+                <!-- Social Media -->
+                <div class="w3-col m6">
+                    <h4>Follow Me</h4>
+                    <a href="https://github.com/Allyeeah" target="_blank">
+                        <img src="images/git.jpg" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/daye-kim-43b222327/" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://app.joinhandshake.com/profiles/58966216" target="_blank">
+                        <img src="images/Handshake.png" alt="Handshake" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <!-- Contact Form -->
+            <h4>Send Me a Message</h4>
+            <form action="mailto:dkim29@neiu.edu" method="post" enctype="text/plain">
+                <div class="w3-section">
+                    <label for="name">Name</label>
+                    <input class="w3-input w3-border" type="text" id="name" name="name" required>
+                </div>
+                <div class="w3-section">
+                    <label for="email">Email</label>
+                    <input class="w3-input w3-border" type="email" id="email" name="email" required>
+                </div>
+                <div class="w3-section">
+                    <label for="message">Message</label>
+                    <textarea class="w3-input w3-border" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="w3-button w3-theme" onclick="sendMS()">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-d3 w3-padding-16">
+        <h5>Footer</h5>
+    </footer>
+    <footer class="w3-container w3-theme-d5">
+        <p>Powered by Daye Kim</p>
+    </footer>
+    <script>
+    function sendMS() {
+        alert("Your information has been sent successfully!");
+  }
+    </script>
+</body>
+</html>

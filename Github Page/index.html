@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Daye Kim - Developer Profile</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+.project-image, .club-image {
+        width: 100%; 
+        height: 200px; 
+        object-fit: cover; /* Keep image ratio */
+        border-radius: 8px; /* Make image more round */
+    }
+
+</style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>DaYeah</a>
+  <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Project"><i class="fa fa-globe"></i></a>
+  <a href="Aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="About me"><i class="fa fa-user"></i></a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+        <a href="projects.html#bank-website" class="w3-bar-item w3-button">Your project 'Bank Website' received positive feedback!</a>
+        <a href="contact.html" class="w3-bar-item w3-button">You have a new message from William.</a>
+        <a href="https://github.com/Allyeeah/weather-app" target="_blank" class="w3-bar-item w3-button">Your GitHub repository 'Weather App' got a new star!</a>
+    </div>
+  </div>
+  <a href="Aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="images/profile.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="Aboutme.html" class="w3-bar-item w3-button w3-padding-large">About me</a>
+  <a href="projects.html" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Daye Kim's Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Daye Kim</h4>
+         <p class="w3-center"><img src="images/profile.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Web Developer </p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Seoul, KOR</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> Nov 2, 2002</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Certifications</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <ul>
+                <li>Microsoft Certified Azure AI Fundamentals</li>
+                <li>Microsoft Certified Azure Data Fundamentals</li>
+                <li>Microsoft Certified Azure Fundamentals</li>
+                <li>Linux Master II</li>
+
+            </ul>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>Interests</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Other interests include:</p>
+        <ul>
+            <li>Full-Stack Development</li>
+            <li>Reading Sci-Fi Novels</li>
+            <li>Traveling and Photography</li>
+        </ul>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i>Learning Path</button>
+          <div id="Demo3" class="w3-hide w3-container">
+            <p><strong>Currently Learning:</strong></p>
+    <ul>
+        <li>Web Development(Html,css,Javascript)</li>
+        <li>App Development(Android,IOS)</li>
+        <li>AI collaboration with cybersecurity</li>
+    </ul>
+    <p><strong>Future Goals:</strong></p>
+    <ul>
+        <li>Master Full-Stack Development</li>
+        <li>Contribute to Open Source Projects</li>
+        <li>Learn Rust and Blockchain Development</li>
+    </ul>
+    
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Skills</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Html</span>
+            <span class="w3-tag w3-small w3-theme-d4">javascript</span>
+            <span class="w3-tag w3-small w3-theme-d3">css</span>
+            <span class="w3-tag w3-small w3-theme-d2">Java</span>
+            <span class="w3-tag w3-small w3-theme-d1">C</span>
+            <span class="w3-tag w3-small w3-theme">C++</span>
+            <span class="w3-tag w3-small w3-theme-l1">C#</span>
+            <span class="w3-tag w3-small w3-theme-l2">Web Development</span>
+            <span class="w3-tag w3-small w3-theme-l3">Virtual Reality</span>
+            <span class="w3-tag w3-small w3-theme-l4">Front-end</span>
+            <span class="w3-tag w3-small w3-theme-l5">Back-end</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Welcome to Daye's Homepage</strong></p>
+        <p>This is my Developer Profile. It includes all about my Development journey and experiences.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">My Developer Journey</h6>
+              <p contenteditable="true" class="w3-border w3-padding">About Development Portfolio</p>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+      
+      <!-- Current Project Section -->
+<div class="w3-container w3-card w3-white w3-round w3-margin">
+    <br>
+    <img src="images/c.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-right w3-opacity">10 min</span>
+    <h4>Current Project</h4><br>
+    <hr class="w3-clear">
+    <ul>
+           <li> <a href="../MovieSample/index.html"><strong>Movie Website : </strong></a> Built a movie discovery website where users can search for the latest films and write reviews.</li>
+            <li><a href="../Todo_List/ex01_TodoList_UI.html"><strong>Todo List Site : </strong></a> Developed a task management web app with features to add, edit, delete, and search to-do items.</li>
+            <li><a href="../fruits_shop_temp/index.html"><strong>Fruit shop : </strong></a> Created an online shopping mall for fruit products with search, sorting, and detail page functionality.</li>
+            <li><a href="../WS_03_template/index.html"><strong>Bank Website : </strong></a> Designed an intuitive banking website showcasing key financial services such as deposits, credit cards, and asset management.</li>
+            <li><a href="https://github.com/HSU-Likelion-B-D/B-D_frontend" target="_blank"><strong>B-D Frontend : </strong></a> Developed a frontend application as part of the HSU Likelion team project.</li>
+            <li><a href="https://github.com/HSU-Likelion-Zipick/Zipick-Front" target="_blank"><strong>Zipick Frontend : </strong></a> Built the frontend for Zipick, a team project developed with HSU Likelion.</li>
+            <li><a href="https://github.com/SEJINLEE01/Capstone" target="_blank"><strong>VR Capstone : </strong></a> Created a VR capstone project exploring virtual reality applications.</li>
+            
+          </ul>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-half">
+          <a href="../MovieSample/index.html"><img src="images/movie.PNG" alt="Current Project 1" style="width:100% " class="project-image w3-margin-bottom"></a>
+        </div>
+        <div class="w3-half">
+          <a href="../Todo_List/ex01_TodoList_UI.html"><img src="images/todolist.PNG" alt="Current Project 2" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+         <div class="w3-half">
+          <a href="../fruits_shop_temp/index.html"><img src="images/fruitshop.PNG" alt="Current Project 3" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+        <div class="w3-half">
+          <a href="../WS_03_template/index.html"><img src="images/bank3.PNG" alt="Current Project 3" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+         <div class="w3-half">
+          <a href="https://github.com/HSU-Likelion-B-D/B-D_frontend"><img src="images/bd.PNG" alt="Current Project 3" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+         <div class="w3-half">
+          <a href="https://github.com/HSU-Likelion-Zipick/Zipick-Front"><img src="images/zipick.PNG" alt="Current Project 3" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+         <div class="w3-half">
+          <a href="https://github.com/SEJINLEE01/Capstone"><img src="images/vr.PNG" alt="Current Project 3" style="width:100%" class="project-image w3-margin-bottom"></a>
+        </div>
+      </div>
+    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" onclick="handleLike()"><i class="fa fa-thumbs-up"></i>  Like</button> 
+    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom" onclick="handleComment()"><i class="fa fa-comment"></i>  Comment</button> 
+  </div>
+  
+
+  <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/P.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>Projects</h4><br>
+        
+        <hr class="w3-clear">
+        <ul>
+            <li><strong>Oneday Class Website Development:</strong> Developed a platform for scheduling and managing online classes.</li>
+            <li><strong>Game Development:</strong> Created an engaging 2D game using Unity and C#.</li>
+            <li><strong>Weather App Development:</strong> Designed a real-time weather application with a user-friendly interface.</li>
+            <li><strong>Bank Website Development:</strong> Focused on creating a user-friendly interface with intuitive navigation for customers to access banking services effortlessly.</li>
+            <li><strong>Healthcare App Development:</strong> Built app to provide healthcare tips and resources.</li>
+            <li><strong>Honeypot AI Research:</strong> Conducted research on AI-based honeypot systems to enhance cybersecurity.</li>
+          </ul>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="images/Oneday.png" style="width:100%" alt="Northern Lights" class="project-image w3-margin-bottom">
+              
+            </div>
+            <div class="w3-half">
+              <img src="images/stella.png" style="width:100%" alt="Nature" class="project-image w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" onclick="handleLike()"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom" onclick="handleComment()"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+
+  <!-- Education Section -->
+   <!---
+  <div class="w3-container w3-card w3-white w3-round w3-margin">
+    <br>
+    <img src="images/E.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-right w3-opacity">25 min</span>
+    <h4>Education</h4><br>
+    <hr class="w3-clear">
+    <ul>
+      <li><strong>Hansung University (South Korea):</strong> Pursuing a Bachelor's degree in Computer Science.</li>
+      <li><strong>Northeastern Illinois University (USA):</strong> Completed a 1-semester exchange program, focusing on computer science and cross-cultural experiences.</li>
+    </ul>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-half">
+          <img src="images/HS.png" alt="Uni1" style="width:100%" class="education-image w3-margin-bottom">
+        </div>
+        <div class="w3-half">
+          <img src="images/neiu.png" alt="Uni2" style="width:100%" class="education-image w3-margin-bottom">
+        </div>
+      </div>
+    <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom" onclick="handleLike()"><i class="fa fa-thumbs-up"></i>  Like</button> 
+    <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom" onclick="handleComment()"><i class="fa fa-comment"></i>  Comment</button> 
+  </div>
+  -- End Middle Column -->
+  
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Contact</p>
+          <p>Email : <a href="mailto:dkim29@neiu.edu"></a><strong>dkim29@neiu.edu</strong></p>
+          <p>Phone : <strong>773-242-9080</strong></p>
+          <p><a href="contact.html"><button class="w3-button w3-block w3-theme-l4">Info</button></a></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Quick Links(Click the Logo)</p>
+          <a href="https://github.com/Allyeeah" target="_blank"><img src="images/git.jpg" alt="Github" style="width:30px; height:30px"></a> github </p>
+          <a href="https://www.linkedin.com/in/daye-kim-43b222327/" target="_blank"><img src="images/linkedin.png" alt="Linkedin" style="width:30px; height:30px"></a> LinkedIn </p>
+          <a href="https://app.joinhandshake.com/profiles/58966216" target="_blank"><img src="images/Handshake.png" alt="Handshake" style="width:30px; height:30px"></a> Handshake </p>
+
+          <div class="w3-row w3-opacity">
+            
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>Recent activities</p>
+        <ul>
+            <li>Backend Development</li>  
+            <li>Learning Python</li>
+        </ul>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <img src="images/work.jpg" alt="Forest" style="width:100%;">
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d5">
+    <p>Follow me on:
+        <a href="https://github.com/Allyeeah" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/daye-kim-43b222327/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </p>
+    <p>Powered by Daye Kim © 2024</p>
+</footer>
+
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Like button
+function handleLike() {
+    alert("You liked this post!");
+  }
+
+
+  // Comment button
+  function handleComment() {
+    let comment = prompt("Write your comment:");
+    if (comment) {
+      alert("Your comment: " + comment);
+    } else {
+      alert("No comment provided.");
+    }
+  }
+
+</script>
+
+</body>
+</html> 
