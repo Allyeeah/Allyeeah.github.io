@@ -63,6 +63,9 @@ function filterVeggies() {
 
 function loadVeggies() {
   renderProducts(filterVeggies(), veggieList);
+  if (veggiePage >= veggies.length) {
+    loadMoreBtn.style.display = "none";
+  }
 }
 ////////////////////////////////////////////////////////
 
